@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, Alert} from 'react-native';
 import * as firebase from 'firebase';
+import {firebaseConfig} from './firebase';
 import {
   Container,
   Content,
@@ -11,16 +12,6 @@ import {
   Button,
   Label,
 } from 'native-base';
-
-const firebaseConfig = {
-  apiKey: 'xx',
-  authDomain: 'xx',
-  databaseURL: 'xx',
-  projectId: 'xx',
-  storageBucket: '',
-  messagingSenderId: 'xx',
-  appId: 'xx',
-};
 
 firebase.initializeApp(firebaseConfig);
 
